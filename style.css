@@ -1,23 +1,26 @@
 body {
-    background-color: aqua;
+	background-color: aqua;
 }
 
-h1, h2 {
-    display: flex;
-    justify-content: center;
+h1,
+h2 {
+	display: flex;
+	justify-content: center;
 }
 
 .game-container {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 .card {
-    justify-content: center;
-    margin: 2px;
-    color: black;
+	justify-content: center;
+	padding: 10%;
+	border: 2px solid black;
+	margin: 9px;
+    height: 50px;
+    
 }
 .buttons {
-    display: flex;
-}
-button {
-    justify-content: center;
+	display: flex;
+	justify-content: space-around;
 }
