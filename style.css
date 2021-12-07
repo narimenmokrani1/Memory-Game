@@ -1,11 +1,12 @@
 body {
-	background-color: aqua;
+	background-image: url(./GAME_IMAGES/world.jpeg);
 }
 
 h1,
 h2 {
 	display: flex;
 	justify-content: center;
+    color: rgb(139, 238, 245);
 }
 
 .game-container {
@@ -13,14 +14,17 @@ h2 {
 	flex-wrap: wrap;
 }
 .card {
-	justify-content: center;
+	
 	padding: 10%;
-	border: 2px solid black;
-	margin: 9px;
-    height: 50px;
-    
+	border: 3px solid rgb(83, 180, 245);
+	margin: 15px;
+    height: 30px;
+    background-image: url("./game_images/back-image.jpeg");
 }
+
 .buttons {
 	display: flex;
 	justify-content: space-around;
+    border: none;
+    
 }
