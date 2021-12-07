@@ -1,2 +1,1 @@
-console.log("check from app")
-
+console.log("check ")
