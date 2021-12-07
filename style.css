@@ -1,0 +1,23 @@
+body {
+    background-color: aqua;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.game-container {
+    display: flex;
+}
+.card {
+    justify-content: center;
+    margin: 2px;
+    color: black;
+}
+.buttons {
+    display: flex;
+}
+button {
+    justify-content: center;
+}
