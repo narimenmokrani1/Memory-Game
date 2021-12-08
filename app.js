@@ -1,4 +1,4 @@
-console.log('check from app');
+// console.log('check from app');
 
 /*----- constants -----*/
 const cardsArr = [
@@ -64,5 +64,10 @@ function darkTheme() {
 	let body = document.querySelector('body');
 	// console.log("i am a dark button")
 	body.classList.toggle('dark-mode');
+	let body1 = document.querySelector('.dark-mode');
+	if (body1 !== null) {
+		DarkModeBtn.innerText = 'Light Mode';
+	} else {
+		DarkModeBtn.innerText = 'Dark Mode';
+	}
 }
-

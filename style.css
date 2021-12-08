@@ -53,3 +53,7 @@ button:hover {
 .dark-mode {
 	background-image: url('./GAME_IMAGES/stars.png');
 }
+.back {
+    background-image: url("./GAME_IMAGES/back-image.jpeg");
+}
+
