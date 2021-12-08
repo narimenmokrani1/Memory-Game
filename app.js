@@ -37,19 +37,17 @@ DarkModeBtn.addEventListener('click', darkTheme);
 // sneakPeekBtn.addEventListener('click', checkCards);
 
 /*----- functions -----*/
-function init (event) {
-console.log("i am a button")
-shuffle(cardsArr);
-console.log(cardsArr)
-for (let i = 0; i <= 15; i++) {
-    console.log(cards[i])
-    console.log(cardsArr[i].image)
-    // let div = document.createElement("div")
-cards[i].style.backgroundImage = `url(${cardsArr[i].image})`
-// cards[i].style.height = "20px"
-}
-
-
+function init(event) {
+	console.log('i am a button');
+	shuffle(cardsArr);
+	console.log(cardsArr);
+	for (let i = 0; i <= 15; i++) {
+		console.log(cards[i]);
+		console.log(cardsArr[i].image);
+		// let div = document.createElement("div")
+		cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
+		// cards[i].style.height = "20px"
+	}
 }
 
 //https://javascript.info/task/shuffle
@@ -62,10 +60,9 @@ function shuffle(array) {
 // shuffle(cardsArr)
 // console.log(cardsArr)
 
-
-function darkTheme () {
-    let body = document.querySelector("body")
-    console.log("i am a dark button")
-    body.classList.toggle("dark-mode");
-    
+function darkTheme() {
+	let body = document.querySelector('body');
+	// console.log("i am a dark button")
+	body.classList.toggle('dark-mode');
 }
+
