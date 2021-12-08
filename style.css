@@ -50,3 +50,7 @@ button:hover {
     box-shadow: 5px 13px 35px 5px rgba(242, 247, 252, 0.8);
     color: blanchedalmond;
 }
+
+.dark-mode {
+    background-image: url("./GAME_IMAGES/stars.png");
+}
