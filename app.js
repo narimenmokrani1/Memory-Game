@@ -29,24 +29,23 @@ const sneakPeekBtn = document.querySelector('#sneak-peek');
 const gameContainer = document.querySelector('.game-container');
 const cards = document.querySelectorAll('.card');
 const h2Counter = document.querySelector('h2');
-
+console.log(cards)
 /*----- event listeners -----*/
 resetBtn.addEventListener('click', init);
-// cards.addEventListener('click', flipCard);
 DarkModeBtn.addEventListener('click', darkTheme);
+
 // sneakPeekBtn.addEventListener('click', checkCards);
 
 /*----- functions -----*/
 function init(event) {
 	console.log('i am a button');
 	shuffle(cardsArr);
-	console.log(cardsArr);
+	// console.log(cardsArr);
 	for (let i = 0; i <= 15; i++) {
-		console.log(cards[i]);
-		console.log(cardsArr[i].image);
-		// let div = document.createElement("div")
-		cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
-		// cards[i].style.height = "20px"
+		cards[i].addEventListener('click', flipCard);
+		function flipCard(event) {
+			cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
+		}
 	}
 }
 
