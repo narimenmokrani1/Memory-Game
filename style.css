@@ -1,5 +1,6 @@
 body {
 	background-image: url(./GAME_IMAGES/world.jpeg);
+
 }
 
 h1,
@@ -116,49 +117,55 @@ button:hover {
 	background-position-y: center;
 }
 
-/* .earth-info {
-	display: none;
-}
-.jupiter-info {
-	display: none;
-}
-.mars-info {
-	display: none;
-}
-.mercury-info {
-	display: none;
-}
-.neptune-info {
-	display: none;
-}
-.saturn-info {
-	display: none;
-}
-.uranus-info {
-	display: none;
-}
-.venus-info {
-	display: none;
-} */
 .hidden {
 	display: none;
 }
 
 .modal {
-	/* display: flex;
-	justify-content: center; */
-	z-index: 1;
-	position: absolute;
-	width: 50%;
-	background-color: rgb(125, 205, 236);
-	padding: 7em;
-	border-radius: 5px;
-	box-shadow: 0 5rem 8rem rgba(54, 19, 206, 0.3);
+	z-index: 10;
+	position:absolute;
+	top: 20%;
+	left: 20%;
+	width: 40%;
+	height: 40%;
+	background: linear-gradient(
+		0deg,
+		rgba(200, 226, 230, 1) 15%,
+		rgba(144, 218, 227, 1) 27%,
+		rgba(61, 61, 198, 1) 100%
+	);
+	font-size: 20px;
+	padding: 10%;
+	border: 15%;
+	border-radius: 40px;
 }
 .modal-footer {
-display: flex;
-align-content: center;
-align-items: center;
-align-content: center;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	align-content: center;
+}
 
+/* from an example of a modal project in Udemy */
+.shadows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal-button {
+	position: relative;
+	bottom: 40%;
+	left: 50%;
+	font-size: 80%;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+	
 }
