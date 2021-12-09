@@ -16,7 +16,7 @@ const mars = document.querySelector("#mars")
 const mercury = document.querySelector("#mercury")
 const neptune = document.querySelector("#neptune")
 const saturn = document.querySelector("#saturn")
-const uranus = document.querySelector("#uranus")
+const uranus = document.querySelector('#uranus');
 const venus = document.querySelector("#venus")
 const closeBtn1 = document.querySelector('#close1');
 const closeBtn2 = document.querySelector('#close2');
@@ -162,7 +162,7 @@ function closeModalUranus() {
 //---------------------------------------------------------------------------------------------------------------------------//
 function showModalvenus() {
 	
-	venus.classList.remove('hidden');
+	venusPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
