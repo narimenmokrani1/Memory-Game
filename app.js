@@ -1,5 +1,3 @@
-// console.log('check from app');
-
 /*----- constants -----*/
 const cardsArr = [
 	{ card: 0, image: './planets-images/earth.png' },
@@ -26,7 +24,6 @@ let clickedCards = [];
 const resetBtn = document.querySelector('#reset');
 const DarkModeBtn = document.querySelector('#dark-mode');
 const sneakPeekBtn = document.querySelector('#sneak-peek');
-const gameContainer = document.querySelector('.game-container');
 const cards = document.querySelectorAll('.card');
 const h2Counter = document.querySelector('h2');
 /*----- event listeners -----*/
@@ -41,20 +38,21 @@ function init(event) {
 	}
 	shuffle(cardsArr);
 	for (let i = 0; i <= 15; i++) {
-		cards[i].addEventListener('click', flipCard);
+		cards[i].addEventListener('click', (event) => {
+			flipCard(event);
+		});
 		function flipCard(event) {
 			cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
-			console.log(event.target.style.backgroundImage);
-			clickedCards.push(event.target);
+			clickedCards.push(cards[i]);
 			//check match with an if else
 			if (clickedCards.length === 2) {
 				if (
 					clickedCards[0].style.backgroundImage ===
 					clickedCards[1].style.backgroundImage
 				) {
-					clickedCards = [];
 					matchedCards.push(clickedCards[0]);
 					matchedCards.push(clickedCards[1]);
+					clickedCards = [];
 				} else {
 					setTimeout(function () {
 						clickedCards[0].style.backgroundImage = `url(${'./GAME_IMAGES/back-image.jpeg'})`;
@@ -66,7 +64,6 @@ function init(event) {
 			if (matchedCards.length === 16) {
 				h2Counter.innerHTML = 'You Have Found All The Planets!';
 				h2Counter.classList.add('win');
-				console.log('you won');
 			}
 		}
 	}
@@ -98,5 +95,17 @@ function reset() {
 }
 
 function sneakingOnCards() {
-	setTimeout(function () {}, 2000);
+	for (let i = 0; i <= 15; i++) {
+		cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
+	}
+	setTimeout(function () {
+		for (let i = 0; i <= 15; i++) {
+			if (matchedCards.includes(cards[i])) {
+			} else {
+				cards[
+					i
+				].style.backgroundImage = `url(${'./GAME_IMAGES/back-image.jpeg'})`;
+			}
+		}
+	}, 2000);
 }

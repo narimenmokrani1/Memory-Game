@@ -58,14 +58,14 @@ button:hover {
 }
 
 .win {
-    box-shadow: 10px 18px 40px 10px rgba(242, 247, 252, 0.8);  
     animation:blinking 1.5s infinite;
+    font-size: 30px;
 }
 /* https://www.educba.com/css-blinking-text/ */
 @keyframes blinking{
-0%{   color: rgb(230, 229, 247);   }
-47%{   color: rgb(97, 136, 219); }
-62%{   color: transparent; }
-97%{   color:transparent; }
-100%{  color: rgb(94, 212, 157);   }
+0%{   color: rgb(233, 109, 26);   }
+60%{   color: rgb(238, 241, 28); }
+50%{   color: transparent; }
+70%{   color:transparent; }
+100%{  color: rgb(47, 141, 165);   }
 }
