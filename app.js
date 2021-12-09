@@ -92,6 +92,7 @@ function reset() {
 	init();
 	h2Counter.innerHTML = 'Still Looking For Planets';
 	h2Counter.classList.remove('win');
+	matchedCards = []
 }
 
 function sneakingOnCards() {
