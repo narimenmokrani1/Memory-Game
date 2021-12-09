@@ -1,3 +1,8 @@
+
+
+const earthPara = document.querySelector('.modal-footer');
+
+
 const cardsArray = [
 	{ card: "earth", image: './planets-images/earth.png' },
 	{ card: "jupiter", image: './planets-images/jupiter.png' },
@@ -22,3 +27,11 @@ for (let i = 0; i <= 7; i++) {
     console.log("i am a planet")
     }
     }
+
+	const earth = document.querySelector("#earth")
+	earth.addEventListener("click", showModal)
+	
+	function showModal () {
+		console.log("i am earth")
+		earthPara.classList.remove("hidden")
+	}

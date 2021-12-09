@@ -20,21 +20,24 @@
 				<div class="planets" id="jupiter"></div>
 				<div class="planets" id="mars"></div>
 				<div class="planets" id="mercury"></div>
-				<p class="earth-info">
-					<!-- https://en.wikipedia.org/wiki/Earth -->
-					Earth is the third planet from the Sun and the only astronomical
-					object known to harbour and support life. 29.2% of Earth's surface is
-					land consisting of continents and islands. The remaining 70.8% is
-					covered with water, mostly by oceans, seas, gulfs, and other
-					salt-water bodies, but also by lakes, rivers, and other freshwater,
-					which together constitute the hydrosphere. Much of Earth's polar
-					regions are covered in ice. Earth's outer layer is divided into
-					several rigid tectonic plates[list] that migrate across the surface
-					over many millions of years, while its interior remains active with a
-					solid iron inner core, a liquid outer core that generates Earth's
-					magnetic field, and a convective mantle that drives plate tectonics.
-				</p>
-				<p class="jupiter-info">
+                <div class="modal-footer hidden">
+                    <p class="earth-info modal">
+                        <button class="modal-button" id="close" href="#">X</button>
+                        <!-- https://en.wikipedia.org/wiki/Earth -->
+                        Earth is the third planet from the Sun and the only astronomical
+                        object known to harbour and support life. 29.2% of Earth's surface is
+                        land consisting of continents and islands. The remaining 70.8% is
+                        covered with water, mostly by oceans, seas, gulfs, and other
+                        salt-water bodies, but also by lakes, rivers, and other freshwater,
+                        which together constitute the hydrosphere. Much of Earth's polar
+                        regions are covered in ice. Earth's outer layer is divided into
+                        several rigid tectonic plates[list] that migrate across the surface
+                        over many millions of years, while its interior remains active with a
+                        solid iron inner core, a liquid outer core that generates Earth's
+                        magnetic field, and a convective mantle that drives plate tectonics.
+                    </p>
+                </div>
+				<p class="jupiter-info modal hidden">
 					<!-- https://en.wikipedia.org/wiki/Jupiter -->
 					Jupiter is the fifth planet from the Sun and the largest in the Solar
 					System. It is a gas giant with a mass more than two and a half times
@@ -45,7 +48,7 @@
 					after the Roman god Jupiter, the king of the gods, because of its
 					observed size.
 				</p>
-				<p class="mars-info">
+				<p class="mars-info modal hidden">
 					<!-- https://en.wikipedia.org/wiki/Mars -->
 					Mars is the fourth planet from the Sun and the second-smallest planet
 					in the Solar System, being larger than only Mercury. In English, Mars
@@ -57,7 +60,7 @@
 					atmosphere, with surface features reminiscent of the impact craters of
 					the Moon and the valleys, deserts and polar ice caps of Earth.
 				</p>
-				<p class="mercury-info">
+				<p class="mercury-info modal hidden">
 					<!-- https://en.wikipedia.org/wiki/Mercury_(planet) -->
 					Mercury is the smallest planet in the Solar System and the closest to
 					the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest
@@ -98,7 +101,7 @@
 				<div class="planets" id="saturn"></div>
 				<div class="planets" id="uranus"></div>
 				<div class="planets" id="venus"></div>
-				<p class="neptune-info">
+				<p class="neptune-info modal hidden">
 					<!-- https://en.wikipedia.org/wiki/Neptune -->
 					Neptune is the eighth and farthest-known Solar planet from the Sun. In
 					the Solar System, it is the fourth-largest planet by diameter, the
@@ -112,7 +115,7 @@
 					♆, a stylised version of the god Neptune's trident or the Greek letter
 					psi.
 				</p>
-				<p class="saturn-info">
+				<p class="saturn-info modal hidden">
 					<!-- https://en.wikipedia.org/wiki/Saturn -->
 					Saturn is the sixth planet from the Sun and the second-largest in the
 					Solar System, after Jupiter. It is a gas giant with an average radius
@@ -126,7 +129,7 @@
 					It later came to look like a lower-case Greek eta, with the cross
 					added at the top in the 16th century.
 				</p>
-				<p class="uranus-info">
+				<p class="uranus-info modal hidden">
                     <!-- https://en.wikipedia.org/wiki/Uranus -->
 					Uranus is the seventh planet from the Sun. Its name is a reference to
 					the Greek god of the sky, Uranus, who, according to Greek mythology,
@@ -147,7 +150,7 @@
 					layer of clouds.[17] The interior of Uranus is mainly composed of ices
 					and rock.
 				</p>
-				<p class="venus-info">
+				<p class="venus-info modal hidden">
                     <!-- https://en.wikipedia.org/wiki/Venus-->
 					Venus is the second planet from the Sun. It is named after the Roman
 					goddess of love and beauty. As the brightest natural object in Earth's

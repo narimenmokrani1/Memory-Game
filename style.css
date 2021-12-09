@@ -10,7 +10,7 @@ h2 {
 }
 
 .game-container {
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	height: 600px;
 	width: 600px;
@@ -18,7 +18,7 @@ h2 {
 	justify-content: center;
 }
 .card {
-    padding: 5%;
+	padding: 5%;
 	border: 3px solid rgb(190, 224, 247);
 	margin: 15px;
 	height: 10%;
@@ -31,52 +31,69 @@ h2 {
 }
 
 .buttons {
-    display: flex;
+	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
 }
 button {
-    padding: 0.6em 1em;
+	padding: 0.6em 1em;
 	margin: 6em 0.3em 0em 0em;
 	border-radius: 2em;
 	text-decoration: none;
 	border: 1px solid white;
-    background: linear-gradient(0deg, rgba(174,234,241,1) 1%, rgba(58,58,189,1) 100%);
-    color: rgb(5, 5, 66)
+	background: linear-gradient(
+		0deg,
+		rgba(174, 234, 241, 1) 1%,
+		rgba(58, 58, 189, 1) 100%
+	);
+	color: rgb(5, 5, 66);
 }
 button:hover {
-    background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background-color: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
 	box-shadow: 4px 10px 35px 4px rgba(242, 247, 252, 0.8);
 	color: blanchedalmond;
 }
 
 .dark-mode {
-    background-image: url('./GAME_IMAGES/stars.png');
+	background-image: url('./GAME_IMAGES/stars.png');
 }
 .back {
-    background-image: url("./GAME_IMAGES/back-image.jpeg");
+	background-image: url('./GAME_IMAGES/back-image.jpeg');
 }
 
 .win {
-    animation:blinking 1.5s infinite;
-    font-size: 30px;
+	animation: blinking 1.5s infinite;
+	font-size: 30px;
 }
 /* https://www.educba.com/css-blinking-text/ */
-@keyframes blinking{
-0%{   color: rgb(233, 109, 26);   }
-60%{   color: rgb(238, 241, 28); }
-50%{   color: transparent; }
-70%{   color:transparent; }
-100%{  color: rgb(47, 141, 165);   }
+@keyframes blinking {
+	0% {
+		color: rgb(233, 109, 26);
+	}
+	60% {
+		color: rgb(238, 241, 28);
+	}
+	50% {
+		color: transparent;
+	}
+	70% {
+		color: transparent;
+	}
+	100% {
+		color: rgb(47, 141, 165);
+	}
 }
 
 @import 'animate.css';
 .animate__flipInY {
---animate-duration: 2s;
+	--animate-duration: 2s;
 }
 .game-container-all {
 	display: flex;
-	
 }
 
 .galaxy {
@@ -89,7 +106,7 @@ button:hover {
 }
 .planets {
 	align-self: flex-start;
-    padding: 5%;
+	padding: 5%;
 	margin: 15px;
 	width: 100px;
 	height: 100px;
@@ -97,4 +114,51 @@ button:hover {
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
+}
+
+/* .earth-info {
+	display: none;
+}
+.jupiter-info {
+	display: none;
+}
+.mars-info {
+	display: none;
+}
+.mercury-info {
+	display: none;
+}
+.neptune-info {
+	display: none;
+}
+.saturn-info {
+	display: none;
+}
+.uranus-info {
+	display: none;
+}
+.venus-info {
+	display: none;
+} */
+.hidden {
+	display: none;
+}
+
+.modal {
+	/* display: flex;
+	justify-content: center; */
+	z-index: 1;
+	position: absolute;
+	width: 50%;
+	background-color: rgb(125, 205, 236);
+	padding: 7em;
+	border-radius: 5px;
+	box-shadow: 0 5rem 8rem rgba(54, 19, 206, 0.3);
+}
+.modal-footer {
+display: flex;
+align-content: center;
+align-items: center;
+align-content: center;
+
 }
