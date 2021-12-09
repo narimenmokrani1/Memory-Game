@@ -8,7 +8,7 @@ const marsPara = document.querySelector(".mars-info")
 const mercuryPara = document.querySelector(".mercury-info")
 const neptunePara = document.querySelector(".neptune-info")
 const saturnPara = document.querySelector(".saturn-info")
-const uranusPara = document.querySelector(".uranus-info")
+const uranusPara = document.querySelector('.uranus-info');
 const venusPara = document.querySelector(".venus-info")
 const earth = document.querySelector('#earth');
 const jupiter = document.querySelector("#jupiter")
@@ -18,7 +18,14 @@ const neptune = document.querySelector("#neptune")
 const saturn = document.querySelector("#saturn")
 const uranus = document.querySelector("#uranus")
 const venus = document.querySelector("#venus")
-const closeBtn = document.querySelector('#close');
+const closeBtn1 = document.querySelector('#close1');
+const closeBtn2 = document.querySelector('#close2');
+const closeBtn3 = document.querySelector('#close3');
+const closeBtn4 = document.querySelector('#close4');
+const closeBtn5 = document.querySelector('#close5');
+const closeBtn6 = document.querySelector('#close6');
+const closeBtn7 = document.querySelector('#close7');
+const closeBtn8 = document.querySelector('#close8');
 const shadow = document.querySelector('.shadows');
 /*----- event listeners -----*/
 earth.addEventListener('click', showModalEarth);
@@ -29,14 +36,14 @@ neptune.addEventListener("click", showModalNeptune)
 saturn.addEventListener("click", showModalSaturn)
 uranus.addEventListener("click", showModalUranus)
 venus.addEventListener("click", showModalvenus)
-closeBtn.addEventListener('click', closeModalEarth);
-closeBtn.addEventListener('click', closeModalJupiter);
-closeBtn.addEventListener('click', closeModalMars);
-closeBtn.addEventListener('click', closeModalMercury);
-closeBtn.addEventListener('click', closeModalNeptune);
-closeBtn.addEventListener('click', closeModalSaturn);
-closeBtn.addEventListener('click', closeModalUranus);
-closeBtn.addEventListener('click', closeModalVenus);
+closeBtn1.addEventListener('click', closeModalEarth);
+closeBtn2.addEventListener('click', closeModalJupiter);
+closeBtn3.addEventListener('click', closeModalMars);
+closeBtn4.addEventListener('click', closeModalMercury);
+closeBtn5.addEventListener('click', closeModalNeptune);
+closeBtn6.addEventListener('click', closeModalSaturn);
+closeBtn7.addEventListener('click', closeModalUranus);
+closeBtn8.addEventListener('click', closeModalVenus);
 
 /*----- functions -----*/
 
@@ -66,13 +73,13 @@ for (let i = 0; i <= 7; i++) {
 }
 
 function showModalEarth() {
-	console.log('i am earth');
+
 	earthPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
 function closeModalEarth() {
-	console.log('i am closing');
+	
 	earthPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
@@ -83,86 +90,84 @@ function showModalJupiter() {
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
-	console.log('i am closing');
+function closeModalJupiter() {
 	jupiterPara.classList.add('hidden');
 	shadow.classList.add('hidden');
+	console.log("close jupiter")
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModalMars() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalMars() {;
+	marsPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
+function closeModalMars() {
 	console.log('i am closing');
-	earthPara.classList.add('hidden');
+	marsPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModal() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalMercury() {
+	mercuryPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
+function closeModalMercury() {
 	console.log('i am closing');
-	earthPara.classList.add('hidden');
+	mercuryPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModal() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalNeptune() {
+	
+	neptunePara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
-	console.log('i am closing');
-	earthPara.classList.add('hidden');
+function closeModalNeptune() {
+	
+	neptunePara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModal() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalSaturn() {
+	
+	saturnPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
-	console.log('i am closing');
-	earthPara.classList.add('hidden');
+function closeModalSaturn() {
+	
+	saturnPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModal() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalUranus() {
+	
+	uranusPara.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
-	console.log('i am closing');
-	earthPara.classList.add('hidden');
+function closeModalUranus() {
+	
+	uranusPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
 
 //---------------------------------------------------------------------------------------------------------------------------//
-function showModal() {
-	console.log('i am earth');
-	earthPara.classList.remove('hidden');
+function showModalvenus() {
+	
+	venus.classList.remove('hidden');
 	shadow.classList.remove('hidden');
 }
 
-function closeModal() {
-	console.log('i am closing');
-	earthPara.classList.add('hidden');
+function closeModalVenus() {
+	
+	venusPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
