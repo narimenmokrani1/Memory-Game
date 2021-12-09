@@ -90,7 +90,6 @@ button:hover {
 .planets {
 	align-self: flex-start;
     padding: 5%;
-	border: 4px solid rgb(190, 224, 247);
 	margin: 15px;
 	width: 100px;
 	height: 100px;
