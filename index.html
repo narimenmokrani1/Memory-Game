@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Memory-Game</title>
-</head>
-<h1>Planet Memory Game</h1>
-<h2>Still Looking For Our Solar System Planets</h2>
-<div class="game-container">
-    <div class="card" id="0"></div>
-    <div class="card" id="1"></div>
-    <div class="card" id="2"></div>
-    <div class="card" id="3"></div>
-    <div class="card" id="4"></div>
-    <div class="card" id="5"></div>
-    <div class="card" id="6"></div>
-    <div class="card" id="7"></div>
-    <div class="card" id="8"></div>
-    <div class="card" id="9"></div>
-    <div class="card" id="10"></div>
-    <div class="card" id="11"></div>
-    <div class="card" id="12"></div>
-    <div class="card" id="13"></div>
-    <div class="card" id="14"></div>
-    <div class="card" id="15"></div>
-</div>
-
-<div class="buttons">
-    <button id="dark-mode">Dark Mode</button>
-    <button id="reset">Start / Reset</button>
-    <button id="sneak-peek">Sneak-peek</button>
-</div>
-<script src="app.js"></script>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<title>Memory-Game</title>
+	</head>
+	<h1 class="animate__flipInY">Planet Memory Game</h1>
+	<h2>Still Looking For Our Solar System Planets</h2>
+	<div class="game-container-all">
+        <div class="galaxy  galaxy-left">
+            <div class="planets" id="earth"></div>
+            <div class="planets" id="jupiter"></div>
+            <div class="planets" id="mars"></div>
+            <div class="planets" id="mercury"></div>
+            
+        </div>
+		<div class="game-container">
+			<div class="card" id="0"></div>
+			<div class="card" id="1"></div>
+			<div class="card" id="2"></div>
+			<div class="card" id="3"></div>
+			<div class="card" id="4"></div>
+			<div class="card" id="5"></div>
+			<div class="card" id="6"></div>
+			<div class="card" id="7"></div>
+			<div class="card" id="8"></div>
+			<div class="card" id="9"></div>
+			<div class="card" id="10"></div>
+			<div class="card" id="11"></div>
+			<div class="card" id="12"></div>
+			<div class="card" id="13"></div>
+			<div class="card" id="14"></div>
+			<div class="card" id="15"></div>
+		</div>
+        <div class="galaxy galaxy-right">
+            <div class="planets" id="neptune"></div>
+            <div class="planets" id="saturn"></div>
+            <div class="planets" id="uranus"></div>
+            <div class="planets" id="venus"></div>
+        </div>
+	</div>
     
-</body>
+	<div class="buttons">
+		<button id="dark-mode">Dark Mode</button>
+		<button id="reset">Start / Reset</button>
+		<button id="sneak-peek">Sneak-peek</button>
+	</div>
+	<script src="app.js"></script>
+    <script src="app1.js"></script>
+	<body></body>
 </html>
