@@ -11,13 +11,14 @@ const cardsArray = [
 ];
 
 const planets = document.querySelectorAll(".planets")
-// for (let i = 0; i <= 7; i++) {
-// // planets[i].addEventListener("click", spreadImage)
-// function spreadImage(event) {
-    for (let i = 0; i <= 7; i++) {
-        planets[i].style.backgroundImage = 
-        `url(${'./planets-images'}/${cardsArray[i].card}.png)`;
+for (let i = 0; i <= 7; i++) {
+    planets[i].style.backgroundImage = 
+    `url(${'./planets-images'}/${cardsArray[i].card}.png)`;
+}
+
+for (let i = 0; i <= 7; i++) {
+    planets[i].addEventListener("click", spreadImage)
+    function spreadImage(event) {
+    console.log("i am a planet")
     }
-    // console.log("i am a planet")
-// }
-// }
+    }
