@@ -38,7 +38,7 @@ function init(event) {
 	}
 	shuffle(cardsArr);
 	for (let i = 0; i <= 15; i++) {
-		cards[i].addEventListener('click',flipCard)
+		cards[i].addEventListener('click', flipCard);
 		function flipCard(event) {
 			cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
 			clickedCards.push(cards[i]);
@@ -62,9 +62,9 @@ function init(event) {
 			if (matchedCards.length === 16) {
 				h2Counter.innerHTML = 'You Have Found All The Planets!';
 				h2Counter.classList.add('win');
-				for(let i = 0; i <= 15; i++) {
-					cards[i].style.border = "3px solid black";
-				};
+				for (let i = 0; i <= 15; i++) {
+					cards[i].style.border = '3px solid black';
+				}
 			}
 		}
 	}
@@ -90,8 +90,8 @@ function darkTheme() {
 }
 
 function reset() {
-	matchedCards = [];
 	clickedCards = [];
+	matchedCards = [];
 	h2Counter.innerHTML = 'Still Looking For Our Solar System Planets';
 	h2Counter.classList.remove('win');
 	init();
@@ -100,15 +100,17 @@ function reset() {
 function sneakingOnCards() {
 	for (let i = 0; i <= 15; i++) {
 		cards[i].style.backgroundImage = `url(${cardsArr[i].image})`;
-	
-	setTimeout(function () {
-		for (let i = 0; i <= 15; i++) {
-			if (matchedCards.includes(cards[i])) {
-			} else {
-				cards[i].style.backgroundImage = `url(${'./GAME_IMAGES/back-image.jpeg'})`;
+
+		setTimeout(function () {
+			for (let i = 0; i <= 15; i++) {
+				if (matchedCards.includes(cards[i])) {
+				} else {
+					cards[
+						i
+					].style.backgroundImage = `url(${'./GAME_IMAGES/back-image.jpeg'})`;
+				}
 			}
-		}
-		
-	}, 2000);
-}
+		}, 2000);
+	}
+	console.log(matchedCards)
 }

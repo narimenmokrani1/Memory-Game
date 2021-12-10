@@ -55,7 +55,6 @@ closeBtn8.addEventListener('click', closeModalVenus);
 
 /*----------------------------------------functions ------------------------------------*/
 
-
 const planets = document.querySelectorAll('.planets');
 for (let i = 0; i <= 7; i++) {
 	planets[i].style.backgroundImage = `url(${'./planets-images'}/${
