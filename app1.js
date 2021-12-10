@@ -35,6 +35,9 @@ const closeBtn6 = document.querySelector('#close6');
 const closeBtn7 = document.querySelector('#close7');
 const closeBtn8 = document.querySelector('#close8');
 const shadow = document.querySelector('.shadows');
+const interobtn = document.querySelector('.game-info');
+const closeBtn0 = document.querySelector("#close0")
+const introPara = document.querySelector('.informe');
 /*----- event listeners -----*/
 earth.addEventListener('click', showModalEarth);
 jupiter.addEventListener('click', showModalJupiter);
@@ -52,7 +55,8 @@ closeBtn5.addEventListener('click', closeModalNeptune);
 closeBtn6.addEventListener('click', closeModalSaturn);
 closeBtn7.addEventListener('click', closeModalUranus);
 closeBtn8.addEventListener('click', closeModalVenus);
-
+interobtn.addEventListener("click", showModalIntero)
+closeBtn0.addEventListener("click", closeModaIntero)
 /*----------------------------------------functions ------------------------------------*/
 
 const planets = document.querySelectorAll('.planets');
@@ -151,5 +155,15 @@ function showModalvenus() {
 
 function closeModalVenus() {
 	venusPara.classList.add('hidden');
+	shadow.classList.add('hidden');
+}
+//-------------------------------------------------------------------------------------------------//
+function showModalIntero() {
+	introPara.classList.remove('hidden');
+	shadow.classList.remove('hidden');
+}
+
+function closeModaIntero() {
+	introPara.classList.add('hidden');
 	shadow.classList.add('hidden');
 }
