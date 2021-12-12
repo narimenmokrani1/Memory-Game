@@ -1,4 +1,3 @@
-
 body {
 	background-image: url(./GAME_IMAGES/world.jpeg);
 }
@@ -35,8 +34,8 @@ h1 {
 	background-position-x: center;
 	background-position-y: center;
 	perspective: 1000px;
-	 transition: transform 0.8s;
-  transform-style: preserve-3d;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
 .buttons {

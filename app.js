@@ -1,21 +1,21 @@
 /*----- constants -----*/
 const cardsArr = [
-	{ card: 0, image: './planets-images/earth.png' },
-	{ card: 1, image: './planets-images/earth.png' },
-	{ card: 2, image: './planets-images/jupiter.png' },
-	{ card: 3, image: './planets-images/jupiter.png' },
-	{ card: 4, image: './planets-images/mars.png' },
-	{ card: 5, image: './planets-images/mars.png' },
-	{ card: 6, image: './planets-images/mercury.png' },
-	{ card: 7, image: './planets-images/mercury.png' },
-	{ card: 8, image: './planets-images/neptune.png' },
-	{ card: 9, image: './planets-images/neptune.png' },
-	{ card: 10, image: './planets-images/saturn.png' },
-	{ card: 11, image: './planets-images/saturn.png' },
-	{ card: 12, image: './planets-images/uranus.png' },
-	{ card: 13, image: './planets-images/uranus.png' },
-	{ card: 14, image: './planets-images/venus.png' },
-	{ card: 15, image: './planets-images/venus.png' },
+	{image: './planets-images/earth.png' },
+	{image: './planets-images/earth.png' },
+	{image: './planets-images/jupiter.png' },
+	{image: './planets-images/jupiter.png' },
+	{image: './planets-images/mars.png' },
+	{image: './planets-images/mars.png' },
+	{image: './planets-images/mercury.png' },
+	{image: './planets-images/mercury.png' },
+	{image: './planets-images/neptune.png' },
+	{image: './planets-images/neptune.png' },
+	{image: './planets-images/saturn.png' },
+	{image: './planets-images/saturn.png' },
+	{image: './planets-images/uranus.png' },
+	{image: './planets-images/uranus.png' },
+	{image: './planets-images/venus.png' },
+	{image: './planets-images/venus.png' },
 ];
 /*----- app's state (variables) -----*/
 let matchedCards = [];
@@ -62,8 +62,7 @@ function init(event) {
 			if (matchedCards.length === 16) {
 				h2Counter.innerHTML = 'You Have Found All The Planets!';
 				h2Counter.classList.add('win');
-				for (let i = 0; i <= 15; i++) {
-				}
+				for (let i = 0; i <= 15; i++) {}
 			}
 		}
 	}
@@ -111,5 +110,5 @@ function sneakingOnCards() {
 			}
 		}, 2000);
 	}
-	console.log(matchedCards)
+	console.log(matchedCards);
 }

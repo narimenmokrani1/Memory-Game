@@ -38,3 +38,15 @@ click [here](https://narimenmokrani1.github.io/Memory-Game/) to go play the Game
 - have a meessage displayed with the number of unmatches.
 - add a 3D affect for when the cards turn.
 - sound affect for when the cards turn, and when game is over.
+
+## **Resources **
+
+### pictures :
+- Wikipedia
+- WallpaperAccess
+
+### code:
+
+- [cards shuffle](//https://javascript.info/task/shuffle)
+- [stack overflow](https://stackoverflow.com/)
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
