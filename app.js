@@ -63,7 +63,6 @@ function init(event) {
 				h2Counter.innerHTML = 'You Have Found All The Planets!';
 				h2Counter.classList.add('win');
 				for (let i = 0; i <= 15; i++) {
-					cards[i].style.border = '3px solid black';
 				}
 			}
 		}
